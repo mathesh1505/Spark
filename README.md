@@ -70,3 +70,20 @@ Step-by-Step Workflow
 * Driver produces final output
 # Shutdown
 * Resources are released
+# Driver (Main Program)
+* The Driver is the program where your main() function runs.
+* Creates SparkSession
+* Converts code → DAG
+* Sends tasks to executors
+* Collects results
+# Executors:
+* Run tasks in parallel
+* Store data in memory for fast processing
+* Report results back to the Driver
+* Example
+* If your dataset has 1GB and 4 executors:
+* Spark splits data into 4 partitions
+* Each executor processes one partition
+# Cluster Manager (Resource Allocator)
+* Cluster Manager allocates CPU, memory, and machines to Spark.
+
