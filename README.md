@@ -86,4 +86,55 @@ Step-by-Step Workflow
 * Each executor processes one partition
 # Cluster Manager (Resource Allocator)
 * Cluster Manager allocates CPU, memory, and machines to Spark.
-
+# Core components
+# RDD (Resilient Distributed Dataset):
+RDD is the fundamental data structure in Spark.Immutable (cannot be changed once created).Distributed across the cluster.Suitable for low-level transformations
+* Uses of RDD:
+* When you need fine control over data
+* When working with unstructured data (text, logs)
+* When transformations are complex and need custom functions
+* Best for low-level operations
+# Spark Core:
+The base engine of Apache Spark.Every other Spark module (SQL, Streaming, MLlib, GraphX) is built on top of Spark Core.
+* Spark Core Includes:
+* Task scheduling
+* Memory management
+* Fault tolerance
+* Interacting with storage systems
+* RDD creation and operations
+# Spark SQL:
+A Spark module used for structured data processing.
+* It provides:
+* DataFrames (like tables)
+* SQL queries
+* Integration with Hive
+* Catalyst Optimizer → improves performance
+# Spark Streaming:
+A module for processing real-time data streams.
+* Examples of streaming sources:
+* Kafka
+* Socket
+* Flume
+* File streams
+* It have Two Types:
+* DStream API (older)
+* Structured Streaming (modern, recommended)
+# MLlib (Machine Learning Library):
+Spark’s machine learning library used for:
+* Classification
+* Regression
+* Clustering
+* Recommendation
+* Feature engineering
+* Pipelines
+# GraphX:
+GraphX is Spark’s graph processing API used for:
+* Social network analysis
+* PageRank
+* Graph traversal
+* Finding connections between entities
+# DataFrame:
+Distributed collection of data in rows and columns (like a SQL table)Built on top of RDDs
+Has schema
+Uses Catalyst Optimizer → very fast
+Best API for Python, Scala, Java
