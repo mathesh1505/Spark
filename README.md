@@ -138,3 +138,8 @@ Distributed collection of data in rows and columns (like a SQL table)Built on to
 Has schema
 Uses Catalyst Optimizer → very fast
 Best API for Python, Scala, Java
+# Dataset:
+Extension of DataFrame with type-safety.Available only in Scala & Java, NOT in Python
+* Mix of:
+* RDD (strong typing)
+* DataFrame (optimization)
