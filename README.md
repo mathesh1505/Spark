@@ -143,6 +143,12 @@ Extension of DataFrame with type-safety.Available only in Scala & Java, NOT in P
 * Mix of:
 * RDD (strong typing)
 * DataFrame (optimization)
+# Converting RDD to DataFrame:
+<img width="1077" height="952" alt="Screenshot 2025-11-20 181042" src="https://github.com/user-attachments/assets/b74dbd60-41e0-4b0a-a64b-2946b0229ece" />
+
+# Converting DataFrame to RDD:
+<img width="1076" height="714" alt="Screenshot 2025-11-20 182744" src="https://github.com/user-attachments/assets/393f8c41-3de3-40c6-8865-1f6d9ae97598" />
+
 # Transformations:
 Transformations are operations that produce a new RDD / DataFrame / Dataset from an existing one. They are lazy (Spark builds a logical plan / DAG but won’t execute until an action is called). Transformations are how you modify or prepare data before an action (like collect(), count(), save()).
 # Narrow Transformations:
